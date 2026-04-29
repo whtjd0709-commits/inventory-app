@@ -1,0 +1,18 @@
+cat > index.html <<'EOF'
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>3-Tier HA Lab</title>
+</head>
+<body style="font-family:sans-serif;text-align:center;padding:60px;">
+  <h1>3-Tier HA Lab — CI/CD 배포 성공!</h1>
+  <p>GitHub Actions → S3 → SSM → EC2</p>
+  <p>배포 버전: v1.0</p>
+</body>
+</html>
+EOF
+
+git add index.html
+git commit -m "add index page"
+git push origin main
